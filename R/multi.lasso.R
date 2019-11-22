@@ -18,7 +18,7 @@ multi.lasso <- function(X, Y, p.fac = NULL, fold.num) {
   p <- ncol(X)
   lambda.index <- which(fit$nzero < (n - floor(n/2)))
   lambda_hat <- fit$lambda[lambda.index[which.min(fit$cvm[lambda.index])]]
-  beta.est <- glmnet::coef.cv.glmnet(fit, s = lambda_hat)
+  beta.est <- stats::coef(fit, s = lambda_hat)
 
   selected.index <- beta.est@i[-1]
   if (length(selected.index) == 0) {

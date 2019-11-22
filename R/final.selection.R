@@ -11,6 +11,7 @@
 #' @export
 #' @import glmnet
 #' @import ncvreg
+#' @importFrom stats coef
 #'
 #' @examples
 #' set.seed(10)

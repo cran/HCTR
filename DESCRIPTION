@@ -1,6 +1,6 @@
 Package: HCTR
 Title: Higher Criticism Tuned Regression
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(person("Tao", "Jiang", role = c("aut", "cre"),
                      email = "tjiang8@ncsu.edu"))
 Description: A novel searching scheme for tuning parameter in high-dimensional 
@@ -23,8 +23,8 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2019-10-04 16:48:49 UTC; tjiang8
+Packaged: 2019-11-22 21:26:00 UTC; tjiang8
 Author: Tao Jiang [aut, cre]
 Maintainer: Tao Jiang <tjiang8@ncsu.edu>
 Repository: CRAN
-Date/Publication: 2019-10-07 14:30:06 UTC
+Date/Publication: 2019-11-22 21:50:09 UTC

@@ -30,7 +30,7 @@ multi.adlasso <- function(X, Y, covar.num = NULL, fold.num) {
   p <- ncol(X)
   lambda.index <- which(adlasso_cv$nzero < (n - floor(n/2)))
   lambda_hat <- adlasso_cv$lambda[lambda.index[which.min(adlasso_cv$cvm[lambda.index])]]
-  beta.est <- glmnet::coef.cv.glmnet(adlasso_cv, s = lambda_hat)
+  beta.est <- stats::coef(adlasso_cv, s = lambda_hat)
 
   selected.index <- beta.est@i[-1]
   if (length(selected.index) == 0) {
